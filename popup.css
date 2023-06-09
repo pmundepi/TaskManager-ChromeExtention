@@ -75,3 +75,7 @@ li button[type="button"] {
     border-radius:.3rem; 
     cursor:pointer; 
 }
+
+li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}

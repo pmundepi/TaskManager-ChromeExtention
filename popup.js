@@ -14,8 +14,10 @@ function renderTasks() {
       task.completed = checkbox.checked;
       if (checkbox.checked) {
         listItem.classList.add("completed");
+        span.style.textDecoration = "line-through";
       } else {
         listItem.classList.remove("completed");
+        span.style.textDecoration = "none";
       }
       saveTasks();
     });
@@ -70,6 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
         input.value = "";
         input.focus();
       }
-    });
+    }); // Add this closing brace
   }
+
+  loadTasks();
+  window.addEventListener("unload", function () {
+    saveTasks();
+  });
 });
