@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Task Manager",
   "version": "1.0",
-  "description": "A task manager for Chrome",
+  "description": "This is a simple task manager Chrome extension that allows you to create and manage tasks.",
   "permissions": ["activeTab", "storage"],
   "icons": {
     "16": "icons/icon16.png",
